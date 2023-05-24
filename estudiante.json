@@ -1,0 +1,12 @@
+[
+  { "id_estudiante": "646d80ba2d6c934ef09e7e48", "fecha": "2022-01-02", "presente": true },
+  { "id_estudiante": "646d80ba2d6c934ef09e7e49", "fecha": "2022-01-02", "presente": false },
+  { "id_estudiante": "646d80ba2d6c934ef09e7e4a", "fecha": "2022-01-02", "presente": true },
+  { "id_estudiante": "646d80ba2d6c934ef09e7e4b", "fecha": "2022-01-02", "presente": false },
+  { "id_estudiante": "646d80ba2d6c934ef09e7e4c", "fecha": "2022-01-02", "presente": true },
+  { "id_estudiante": "646d80ba2d6c934ef09e7e4d", "fecha": "2022-01-02", "presente": false },
+  { "id_estudiante": "646d80ba2d6c934ef09e7e4e", "fecha": "2022-01-02", "presente": true },
+  { "id_estudiante": "646d80ba2d6c934ef09e7e4f", "fecha": "2022-01-02", "presente": false },
+  { "id_estudiante": "646d80ba2d6c934ef09e7e50", "fecha": "2022-01-02", "presente": true },
+  { "id_estudiante": "646d80ba2d6c934ef09e7e51", "fecha": "2022-01-02", "presente": false }
+]
