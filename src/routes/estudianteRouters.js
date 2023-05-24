@@ -14,7 +14,7 @@ router.get("/", runServer);
 
 router.get("/all-estudiante", getAllEstudiante);
 
-router.get("/citation/:id", getEstudiante);
+router.get("/estudiante/:id", getEstudiante);
 
 router.post("/new-estudiante", newEstudiante);
 
