@@ -1,6 +1,7 @@
 import cors from "cors";
 import express from "express";
-import Routers from "./routes/estudianteRouters.js";
+import estudianteRouters from "./routes/estudianteRouters.js";
+import asistenciaRouters from "./routes/asistenciaRouters.js";
 
 const server = express();
 
@@ -8,7 +9,8 @@ const server = express();
 server.use(cors(), express.json());
 
 // Routes
-server.use(Routers);
+server.use(estudianteRouters);
+server.use(asistenciaRouters)
 
 const PORT = process.env.PORT || 4000;
 
