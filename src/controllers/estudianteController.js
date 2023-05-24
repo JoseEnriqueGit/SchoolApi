@@ -18,8 +18,7 @@ export const getAllEstudiante = async (req, res) => {
 			});
 		}
 		res.status(200).json({
-			message: "Registros obtenidos exitosamente",
-			result,
+			result
 		});
 	} catch (error) {
 		res.status(500).json({
