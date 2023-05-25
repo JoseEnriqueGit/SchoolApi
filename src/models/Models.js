@@ -42,6 +42,8 @@ const AsistenciaSchema = new mongoose.Schema({
 		type: mongoose.Schema.Types.ObjectId,
 		ref: "Estudiante",
 	},
+	nombre: String,
+	apellido: String,
 	fecha: Date,
 	presente: Boolean,
 });
