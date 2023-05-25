@@ -35,13 +35,36 @@ export const getAsistencia = async (req, res) => {
 	}
 };
 
+// export const newAsistencia = async (req, res) => {
+// 	try {
+// 		const result = await Asistencia.create(req.body);
+// 		res.status(201).json({
+// 			message: "Registro creado exitosamente",
+// 			result,
+// 		});
+// 	} catch (error) {
+// 		res.status(500).json({
+// 			message: "Error al crear el registro",
+// 			error,
+// 		});
+// 	}
+// };
+
 export const newAsistencia = async (req, res) => {
 	try {
-		const result = await Asistencia.create(req.body);
-		res.status(201).json({
-			message: "Registro creado exitosamente",
-			result,
-		});
+		const { fecha } = req.body;
+		const existingAsistencia = await Asistencia.findOne({ fecha });
+		if (existingAsistencia) {
+			res.status(400).json({
+				message: "Esta fecha ya tiene una asistencia registrada",
+			});
+		} else {
+			const result = await Asistencia.create(req.body);
+			res.status(201).json({
+				message: "Registro creado exitosamente",
+				result,
+			});
+		}
 	} catch (error) {
 		res.status(500).json({
 			message: "Error al crear el registro",
