@@ -53,7 +53,7 @@ export const getAsistencia = async (req, res) => {
 export const newAsistencia = async (req, res) => {
 	try {
 		const { fecha } = req.body;
-		const existingAsistencia = await Asistencia.findOne({ fecha });
+		const existingAsistencia = await Asistencia.findOne({ fecha: req.params.fecha });
 		if (existingAsistencia) {
 			res.status(400).json({
 				message: "Esta fecha ya tiene una asistencia registrada",
